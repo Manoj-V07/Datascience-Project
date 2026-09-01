@@ -1,0 +1,21 @@
+Event_Date,Event_Name,Disaster_Type,Historically_Documented_Districts
+2011-12-30,Cyclone Thane,Cyclone,Cuddalore; Villupuram; Pudukkottai
+2012-10-31,Cyclone Nilam,Cyclone,Chennai; Tiruvallur; Cuddalore; Kancheepuram
+2016-12-12,Cyclone Vardah,Cyclone,Chennai; Tiruvallur; Kancheepuram; Chengalpattu
+2017-12-02,Cyclone Ockhi,Cyclone,Kanniyakumari; Thoothukudi; Tirunelveli
+2018-11-16,Cyclone Gaja,Cyclone,Nagapattinam; Tiruvarur; Thanjavur; Pudukkottai; Dindigul
+2020-11-25,Cyclone Nivar,Cyclone,Cuddalore; Villupuram; Chengalpattu; Kancheepuram; Tiruvallur; Chennai
+2020-12-03,Cyclone Burevi,Cyclone,Thoothukudi; Tirunelveli; Kanniyakumari; Ramanathapuram
+2022-12-09,Cyclone Mandous,Cyclone,Chengalpattu; Chennai; Kancheepuram; Tiruvallur
+2023-12-04,Cyclone Michaung,Cyclone,Chennai; Tiruvallur; Chengalpattu; Kancheepuram
+2024-11-30,Cyclone Fengal,Cyclone,Chennai; Tiruvallur; Kancheepuram; Chengalpattu; Villupuram; Kallakurichi; Cuddalore; Tiruvannamalai; Dharmapuri; Krishnagiri; Ranipet; Vellore; Tirupathur
+2004-12-26,Indian Ocean Tsunami 2004,Tsunami,Chennai; Tiruvallur; Chengalpattu; Villupuram; Cuddalore; Nagapattinam; Thiruvarur; Thanjavur; Pudukkottai; Ramanathapuram; Thoothukudi; Tirunelveli; Kanniyakumari
+2015-12-02,Chennai Floods 2015,Flood,Chennai; Tiruvallur; Kancheepuram; Cuddalore
+2023-12-18,South Tamil Nadu Floods 2023,Flood,Tirunelveli; Thoothukudi; Kanniyakumari; Tenkasi; Ramanathapuram; Virudhunagar
+2017-01-10,North-East Monsoon Drought 2016-17,Drought,Chennai; Cuddalore; Dharmapuri; Dindigul; Erode; Madurai; Nagapattinam; Ramanathapuram; Salem; Thanjavur; Thoothukudi; Tirunelveli; Virudhunagar; Tiruchirappalli
+2022-04-15,Tamil Nadu Forest Fire Season 2022,Wildfire,Nilgiris; Coimbatore; Dharmapuri; Krishnagiri; Erode; Dindigul; Salem
+2023-04-15,Tamil Nadu Forest Fire Season 2023,Wildfire,Nilgiris; Coimbatore; Dharmapuri; Krishnagiri; Erode; Dindigul; Salem
+2024-04-15,Tamil Nadu Forest Fire Season 2024,Wildfire,Nilgiris; Coimbatore; Dharmapuri; Krishnagiri; Erode; Dindigul; Salem; Theni
+2021-11-10,Nilgiris Landslide Episode 2021,Landslide,Nilgiris; Coimbatore
+2019-05-25,Tamil Nadu Heatwave Season 2019,Heatwave,Chennai; Tiruvallur; Vellore; Ranipet; Tirupathur; Karur; Madurai; Thanjavur; Tiruchirappalli
+2024-05-25,Tamil Nadu Heatwave Season 2024,Heatwave,Chennai; Tiruvallur; Vellore; Ranipet; Tirupathur; Karur; Madurai; Tiruchirappalli; Salem
