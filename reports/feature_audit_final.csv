@@ -1,0 +1,47 @@
+Column,Data_Type,Role,Status,ML_Use,Optimization_Use,Evidence,Recommendation
+Assessment_ID,object,Identifier/Metadata,KEEP,NO,YES,Required for joins and routing,"Exclude from ML, keep for Optimization"
+Event_ID,object,Identifier/Metadata,KEEP,NO,YES,Required for joins and routing,"Exclude from ML, keep for Optimization"
+Location_ID,object,Identifier/Metadata,KEEP,NO,YES,Required for joins and routing,"Exclude from ML, keep for Optimization"
+District,object,Identifier/Metadata,KEEP,NO,YES,Required for joins and routing,"Exclude from ML, keep for Optimization"
+Response_Zone,object,Identifier/Metadata,KEEP,NO,YES,Required for joins and routing,"Exclude from ML, keep for Optimization"
+Assessment_Window,object,Identifier/Metadata,KEEP,NO,YES,Required for joins and routing,"Exclude from ML, keep for Optimization"
+Hours_Since_Disaster,int64,ML Predictor,KEEP,YES,NO,Legitimate predictor relationship,Keep for Phase 2 EDA
+Simulation_ID,object,Identifier/Metadata,KEEP,NO,YES,Required for joins and routing,"Exclude from ML, keep for Optimization"
+Latitude,float64,ML Predictor,KEEP,YES,NO,Legitimate predictor relationship,Keep for Phase 2 EDA
+Longitude,float64,ML Predictor,KEEP,YES,NO,Legitimate predictor relationship,Keep for Phase 2 EDA
+Hub_ID,object,Identifier/Metadata,KEEP,NO,YES,Required for joins and routing,"Exclude from ML, keep for Optimization"
+Distance_to_Hub_km,float64,Geographic Logic,KEEP,YES,YES,Highly correlated but distinct physical meanings,Retain and investigate in EDA
+Population_Baseline,int64,ML Predictor,KEEP,YES,NO,Legitimate predictor relationship,Keep for Phase 2 EDA
+Population_Affected_Est,int64,ML Predictor,KEEP,YES,YES,Legitimate predictor relationship with resource demand,High synthetic dependency risk; investigate target-generation logic
+Affected_Population_pct,float64,ML Predictor,KEEP,YES,NO,Legitimate predictor relationship,Keep for Phase 2 EDA
+Fatalities_Est,int64,ML Predictor,KEEP,YES,NO,Legitimate predictor relationship,Keep for Phase 2 EDA
+Injured_Est,int64,ML Predictor,KEEP,YES,NO,Legitimate predictor relationship,Keep for Phase 2 EDA
+Houses_Damaged_Est,int64,ML Predictor,KEEP,YES,NO,Legitimate predictor relationship,Keep for Phase 2 EDA
+Severity_Score,float64,ML Predictor,KEEP,YES,NO,Correlated but represent distinct domain concepts,Keep for Phase 2 EDA
+Infrastructure_Damage_Score,float64,ML Predictor,KEEP,YES,NO,Correlated but represent distinct domain concepts,Keep for Phase 2 EDA
+Accessibility_Score,float64,ML Predictor,KEEP,YES,NO,Legitimate predictor relationship,Keep for Phase 2 EDA
+Medical_Urgency_Score,float64,ML Predictor,KEEP,YES,NO,Correlated but represent distinct domain concepts,Keep for Phase 2 EDA
+Rainfall_mm,float64,ML Predictor,KEEP,YES,NO,Legitimate predictor relationship,Keep for Phase 2 EDA
+Wind_Speed_kmph,float64,ML Predictor,KEEP,YES,NO,Legitimate predictor relationship,Keep for Phase 2 EDA
+Temperature_C,float64,ML Predictor,KEEP,YES,NO,Legitimate predictor relationship,Keep for Phase 2 EDA
+Flood_Depth_m,float64,ML Predictor,KEEP,YES,NO,Legitimate predictor relationship,Keep for Phase 2 EDA
+River_Level_m,float64,ML Predictor,KEEP,YES,NO,Legitimate predictor relationship,Keep for Phase 2 EDA
+Storm_Surge_m,float64,ML Predictor,KEEP,YES,NO,Legitimate predictor relationship,Keep for Phase 2 EDA
+Wave_Height_m,float64,ML Predictor,KEEP,YES,NO,Legitimate predictor relationship,Keep for Phase 2 EDA
+Burned_Area_km2,float64,ML Predictor,KEEP,YES,NO,Legitimate predictor relationship,Keep for Phase 2 EDA
+Rainfall_Deficit_pct,float64,ML Predictor,KEEP,YES,NO,Legitimate predictor relationship,Keep for Phase 2 EDA
+Slope_Risk_Score,float64,ML Predictor,KEEP,YES,NO,Legitimate predictor relationship,Keep for Phase 2 EDA
+Rescue_Cases_Est,int64,ML Predictor,KEEP,YES,NO,Legitimate predictor relationship,Keep for Phase 2 EDA
+Road_Access_Score,float64,Redundant Predictor,REMOVE_FROM_MODEL,NO,NO,100% duplicate of Accessibility_Score,Use Accessibility_Score instead
+Estimated_Travel_Time_min,float64,Geographic Logic,KEEP,YES,YES,Highly correlated but distinct physical meanings,Retain and investigate in EDA
+Estimated_Relief_Time_min,float64,ML Predictor,KEEP,YES,NO,Legitimate predictor relationship,Keep for Phase 2 EDA
+Food_Required_packets,int64,ML Target Candidates,INVESTIGATE,TARGET,YES,High correlation with Population_Affected_Est,Test in Phase 3 if targets are too deterministic (synthetic dependency)
+Water_Required_Liters,int64,ML Target Candidates,INVESTIGATE,TARGET,YES,High correlation with Population_Affected_Est,Test in Phase 3 if targets are too deterministic (synthetic dependency)
+Medical_Kits_Required,int64,ML Target Candidates,INVESTIGATE,TARGET,YES,High correlation with Population_Affected_Est,Test in Phase 3 if targets are too deterministic (synthetic dependency)
+Shelter_Spaces_Required,int64,ML Target Candidates,INVESTIGATE,TARGET,YES,High correlation with Population_Affected_Est,Test in Phase 3 if targets are too deterministic (synthetic dependency)
+Priority_Score,float64,Derived Feature / Decision Output,DERIVED,NO,YES,R² = 0.9964 from input features,"Exclude from ML to prevent target leakage, keep for reporting/optimization"
+Priority_Level,object,Derived Feature / Decision Output,DERIVED,NO,YES,R² = 0.9964 from input features,"Exclude from ML to prevent target leakage, keep for reporting/optimization"
+Required_Rescue_Personnel,int64,ML Target Candidates,INVESTIGATE,TARGET,YES,High correlation with Population_Affected_Est,Test in Phase 3 if targets are too deterministic (synthetic dependency)
+Required_Distribution_Personnel,int64,ML Target Candidates,INVESTIGATE,TARGET,YES,High correlation with Population_Affected_Est,Test in Phase 3 if targets are too deterministic (synthetic dependency)
+Required_Medical_Personnel,int64,ML Target Candidates,INVESTIGATE,TARGET,YES,High correlation with Population_Affected_Est,Test in Phase 3 if targets are too deterministic (synthetic dependency)
+Recommended_Total_Personnel,int64,Derived Feature,DERIVED,NO,YES,Exact sum of personnel fields in 100% records,"Exclude as independent ML feature, use in optimization"

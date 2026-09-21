@@ -1,0 +1,84 @@
+Dataset,Column,Role,Keep_Change_Remove,Reason
+data_dictionary.csv,Dataset,Required input feature,Keep,Initial audit placeholder
+data_dictionary.csv,Column,Required input feature,Keep,Initial audit placeholder
+data_dictionary.csv,Data_Type,Required input feature,Keep,Initial audit placeholder
+data_dictionary.csv,Role,Required input feature,Keep,Initial audit placeholder
+data_dictionary.csv,Description,Required input feature,Keep,Initial audit placeholder
+disaster_events.csv,Event_ID,Metadata,Keep,Initial audit placeholder
+disaster_events.csv,Event_Name,Required input feature,Keep,Initial audit placeholder
+disaster_events.csv,Event_Date,Required input feature,Keep,Initial audit placeholder
+disaster_events.csv,Disaster_Type,Required input feature,Keep,Initial audit placeholder
+disaster_events.csv,State,Required input feature,Keep,Initial audit placeholder
+disaster_events.csv,Expected_Duration_Hours,Required input feature,Keep,Initial audit placeholder
+disaster_events.csv,Historical_Event,Required input feature,Keep,Initial audit placeholder
+historical_event_districts.csv,Historical_Record_ID,Metadata,Keep,Initial audit placeholder
+historical_event_districts.csv,Event_ID,Metadata,Keep,Initial audit placeholder
+historical_event_districts.csv,District,Required input feature,Keep,Initial audit placeholder
+historical_event_districts.csv,State,Required input feature,Keep,Initial audit placeholder
+historical_event_districts.csv,Historically_Documented,Required input feature,Keep,Initial audit placeholder
+historical_event_districts.csv,Source_Type,Required input feature,Keep,Initial audit placeholder
+relief_hubs.csv,Hub_ID,Metadata,Keep,Initial audit placeholder
+relief_hubs.csv,Hub_Name,Required input feature,Keep,Initial audit placeholder
+relief_hubs.csv,District,Required input feature,Keep,Initial audit placeholder
+relief_hubs.csv,Latitude,Required input feature,Keep,Initial audit placeholder
+relief_hubs.csv,Longitude,Required input feature,Keep,Initial audit placeholder
+relief_hubs.csv,Storage_Capacity,Required input feature,Keep,Initial audit placeholder
+relief_hubs.csv,Vehicle_Count,Required input feature,Keep,Initial audit placeholder
+resource_inventory.csv,Inventory_ID,Metadata,Keep,Initial audit placeholder
+resource_inventory.csv,Hub_ID,Metadata,Keep,Initial audit placeholder
+resource_inventory.csv,Event_ID,Metadata,Keep,Initial audit placeholder
+resource_inventory.csv,Food_Available_packets,Required input feature,Keep,Initial audit placeholder
+resource_inventory.csv,Water_Available_Liters,Required input feature,Keep,Initial audit placeholder
+resource_inventory.csv,Medical_Kits_Available,Required input feature,Keep,Initial audit placeholder
+resource_inventory.csv,Shelter_Capacity_Available,Required input feature,Keep,Initial audit placeholder
+resource_inventory.csv,Vehicles_Available,Required input feature,Keep,Initial audit placeholder
+resource_inventory.csv,Vehicle_Capacity,Required input feature,Keep,Initial audit placeholder
+resource_inventory.csv,Rescue_Personnel_Available,Required input feature,Keep,Initial audit placeholder
+resource_inventory.csv,Distribution_Personnel_Available,Required input feature,Keep,Initial audit placeholder
+resource_inventory.csv,Medical_Personnel_Available,Required input feature,Keep,Initial audit placeholder
+zone_assessments.csv,Assessment_ID,Metadata,Keep,Initial audit placeholder
+zone_assessments.csv,Event_ID,Metadata,Keep,Initial audit placeholder
+zone_assessments.csv,Location_ID,Metadata,Keep,Initial audit placeholder
+zone_assessments.csv,District,Required input feature,Keep,Initial audit placeholder
+zone_assessments.csv,Response_Zone,Required input feature,Keep,Initial audit placeholder
+zone_assessments.csv,Assessment_Window,Required input feature,Keep,Initial audit placeholder
+zone_assessments.csv,Hours_Since_Disaster,Required input feature,Keep,Initial audit placeholder
+zone_assessments.csv,Simulation_ID,Metadata,Keep,Initial audit placeholder
+zone_assessments.csv,Latitude,Required input feature,Keep,Initial audit placeholder
+zone_assessments.csv,Longitude,Required input feature,Keep,Initial audit placeholder
+zone_assessments.csv,Hub_ID,Metadata,Keep,Initial audit placeholder
+zone_assessments.csv,Distance_to_Hub_km,Required input feature,Keep,Initial audit placeholder
+zone_assessments.csv,Population_Baseline,Required input feature,Keep,Initial audit placeholder
+zone_assessments.csv,Population_Affected_Est,Derived feature / Target,Keep,Initial audit placeholder
+zone_assessments.csv,Affected_Population_pct,Required input feature,Keep,Initial audit placeholder
+zone_assessments.csv,Fatalities_Est,Derived feature / Target,Keep,Initial audit placeholder
+zone_assessments.csv,Injured_Est,Derived feature / Target,Keep,Initial audit placeholder
+zone_assessments.csv,Houses_Damaged_Est,Derived feature / Target,Keep,Initial audit placeholder
+zone_assessments.csv,Severity_Score,Derived feature / Target,Keep,Initial audit placeholder
+zone_assessments.csv,Infrastructure_Damage_Score,Derived feature / Target,Keep,Initial audit placeholder
+zone_assessments.csv,Accessibility_Score,Derived feature / Target,Keep,Initial audit placeholder
+zone_assessments.csv,Medical_Urgency_Score,Derived feature / Target,Keep,Initial audit placeholder
+zone_assessments.csv,Rainfall_mm,Required input feature,Keep,Initial audit placeholder
+zone_assessments.csv,Wind_Speed_kmph,Required input feature,Keep,Initial audit placeholder
+zone_assessments.csv,Temperature_C,Required input feature,Keep,Initial audit placeholder
+zone_assessments.csv,Flood_Depth_m,Required input feature,Keep,Initial audit placeholder
+zone_assessments.csv,River_Level_m,Required input feature,Keep,Initial audit placeholder
+zone_assessments.csv,Storm_Surge_m,Required input feature,Keep,Initial audit placeholder
+zone_assessments.csv,Wave_Height_m,Required input feature,Keep,Initial audit placeholder
+zone_assessments.csv,Burned_Area_km2,Required input feature,Keep,Initial audit placeholder
+zone_assessments.csv,Rainfall_Deficit_pct,Required input feature,Keep,Initial audit placeholder
+zone_assessments.csv,Slope_Risk_Score,Derived feature / Target,Keep,Initial audit placeholder
+zone_assessments.csv,Rescue_Cases_Est,Derived feature / Target,Keep,Initial audit placeholder
+zone_assessments.csv,Road_Access_Score,Derived feature / Target,Keep,Initial audit placeholder
+zone_assessments.csv,Estimated_Travel_Time_min,Derived feature / Target,Keep,Initial audit placeholder
+zone_assessments.csv,Estimated_Relief_Time_min,Derived feature / Target,Keep,Initial audit placeholder
+zone_assessments.csv,Food_Required_packets,Derived feature / Target,Keep,Initial audit placeholder
+zone_assessments.csv,Water_Required_Liters,Derived feature / Target,Keep,Initial audit placeholder
+zone_assessments.csv,Medical_Kits_Required,Derived feature / Target,Keep,Initial audit placeholder
+zone_assessments.csv,Shelter_Spaces_Required,Derived feature / Target,Keep,Initial audit placeholder
+zone_assessments.csv,Priority_Score,Derived feature / Target,Keep,Initial audit placeholder
+zone_assessments.csv,Priority_Level,Required input feature,Keep,Initial audit placeholder
+zone_assessments.csv,Required_Rescue_Personnel,Derived feature / Target,Keep,Initial audit placeholder
+zone_assessments.csv,Required_Distribution_Personnel,Derived feature / Target,Keep,Initial audit placeholder
+zone_assessments.csv,Required_Medical_Personnel,Derived feature / Target,Keep,Initial audit placeholder
+zone_assessments.csv,Recommended_Total_Personnel,Required input feature,Keep,Initial audit placeholder

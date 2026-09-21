@@ -1,0 +1,11 @@
+Hub_ID,Hub_Name,District,Latitude,Longitude,Storage_Capacity,Vehicle_Count
+HUB001,Chennai Central Relief Hub,Chennai,13.0827,80.2707,600000,50
+HUB002,Cuddalore Coastal Relief Hub,Cuddalore,11.748,79.7714,450000,40
+HUB003,Nagapattinam Delta Relief Hub,Nagapattinam,10.7672,79.8449,420000,35
+HUB004,Thanjavur Regional Relief Hub,Thanjavur,10.787,79.1378,500000,40
+HUB005,Tiruchirappalli Central Relief Hub,Tiruchirappalli,10.7905,78.7047,550000,45
+HUB006,Salem Western Relief Hub,Salem,11.6643,78.146,520000,42
+HUB007,Coimbatore Western Relief Hub,Coimbatore,11.0168,76.9558,600000,50
+HUB008,Madurai Southern Relief Hub,Madurai,9.9252,78.1198,560000,45
+HUB009,Tirunelveli Southern Relief Hub,Tirunelveli,8.7139,77.7567,480000,38
+HUB010,Kanniyakumari Coastal Relief Hub,Kanniyakumari,8.0883,77.5385,350000,30

@@ -1,0 +1,79 @@
+Dataset,Column,Data_Type,Role,Description
+disaster_events.csv,Event_ID,String,Key,Unique disaster event identifier
+disaster_events.csv,Event_Name,String,Reference,Human-readable disaster event name
+disaster_events.csv,Event_Date,Date,Reference,Synthetic anchor date from supplied historical reference
+disaster_events.csv,Disaster_Type,Category,Feature,Flood/Cyclone/Tsunami/Drought/Wildfire/Landslide/Heatwave
+disaster_events.csv,State,Category,Reference,State; currently Tamil Nadu
+disaster_events.csv,Expected_Duration_Hours,Integer,Feature,Synthetic operational planning horizon
+disaster_events.csv,Historical_Event,Boolean,Reference,True when the event is anchored to the supplied historical event list
+zone_assessments.csv,Assessment_ID,String,Key,Unique assessment record
+zone_assessments.csv,Event_ID,String,Key/Join,Links assessment to disaster event
+zone_assessments.csv,Location_ID,String,Key/Join,Stable location identifier for a district
+zone_assessments.csv,District,Category,Feature,Administrative district
+zone_assessments.csv,Response_Zone,Category,Reference,Operational zone label; one synthetic primary zone per district
+zone_assessments.csv,Assessment_Window,Category,Feature,T+0h through T+72h
+zone_assessments.csv,Hours_Since_Disaster,Integer,Feature,Numeric version of assessment time
+zone_assessments.csv,Simulation_ID,Category,Simulation control,Synthetic Monte Carlo scenario identifier; not intended as a model feature
+zone_assessments.csv,Latitude,Float,Feature,Approximate district-center latitude used for synthetic geography
+zone_assessments.csv,Longitude,Float,Feature,Approximate district-center longitude used for synthetic geography
+zone_assessments.csv,Hub_ID,String,Join,Nearest assigned relief hub
+zone_assessments.csv,Distance_to_Hub_km,Float,Feature,Great-circle distance to assigned hub
+zone_assessments.csv,Population_Baseline,Integer,Feature,Stable synthetic baseline population for district
+zone_assessments.csv,Population_Affected_Est,Integer,Feature/Target input,Estimated affected population
+zone_assessments.csv,Affected_Population_pct,Float,Derived feature,Affected population divided by baseline population
+zone_assessments.csv,Fatalities_Est,Integer,Impact,Estimated fatalities
+zone_assessments.csv,Injured_Est,Integer,Impact,Estimated injured population
+zone_assessments.csv,Houses_Damaged_Est,Integer,Impact,Estimated damaged houses
+zone_assessments.csv,Severity_Score,Float 0-100,Feature,Disaster severity score
+zone_assessments.csv,Infrastructure_Damage_Score,Float 0-100,Feature,Normalized infrastructure damage score
+zone_assessments.csv,Accessibility_Score,Float 0-100,Feature,Higher means easier to access
+zone_assessments.csv,Medical_Urgency_Score,Float 0-100,Feature,Medical urgency index
+zone_assessments.csv,Rainfall_mm,Float,Hazard feature,Rainfall; 0 may mean not applicable
+zone_assessments.csv,Wind_Speed_kmph,Float,Hazard feature,Wind speed; 0 may mean not applicable
+zone_assessments.csv,Temperature_C,Float,Hazard feature,Temperature
+zone_assessments.csv,Flood_Depth_m,Float,Hazard feature,Flood/inundation depth; 0 may mean not applicable
+zone_assessments.csv,River_Level_m,Float,Hazard feature,Synthetic river level; 0 may mean not applicable
+zone_assessments.csv,Storm_Surge_m,Float,Hazard feature,Synthetic storm surge; 0 may mean not applicable
+zone_assessments.csv,Wave_Height_m,Float,Hazard feature,Synthetic wave height; 0 may mean not applicable
+zone_assessments.csv,Burned_Area_km2,Float,Hazard feature,Synthetic burned area; 0 may mean not applicable
+zone_assessments.csv,Rainfall_Deficit_pct,Float,Hazard feature,Rainfall deficit; 0 may mean not applicable
+zone_assessments.csv,Slope_Risk_Score,Float 0-100,Hazard feature,Slope susceptibility; 0 may mean not applicable
+zone_assessments.csv,Rescue_Cases_Est,Integer,Operational feature,Estimated rescue cases
+zone_assessments.csv,Road_Access_Score,Float 0-100,Operational feature,Higher means better road access
+zone_assessments.csv,Estimated_Travel_Time_min,Float,Operational feature,Estimated travel time from assigned hub
+zone_assessments.csv,Estimated_Relief_Time_min,Float,Operational feature,Synthetic total relief activity duration estimate
+zone_assessments.csv,Food_Required_packets,Integer,Target,Estimated immediate next-24h food requirement
+zone_assessments.csv,Water_Required_Liters,Integer,Target,Estimated immediate next-24h water requirement
+zone_assessments.csv,Medical_Kits_Required,Integer,Target,Estimated immediate next-24h medical kit requirement
+zone_assessments.csv,Shelter_Spaces_Required,Integer,Target,Estimated shelter spaces required
+zone_assessments.csv,Priority_Score,Float 0-100,Derived output,Weighted decision score
+zone_assessments.csv,Priority_Level,Category,Derived output,Low/Moderate/High/Critical
+zone_assessments.csv,Required_Rescue_Personnel,Integer,Derived output,Estimated rescue personnel requirement
+zone_assessments.csv,Required_Distribution_Personnel,Integer,Derived output,Estimated distribution personnel requirement
+zone_assessments.csv,Required_Medical_Personnel,Integer,Derived output,Estimated medical personnel requirement
+zone_assessments.csv,Recommended_Total_Personnel,Integer,Derived output,"Sum of required rescue, distribution and medical personnel"
+relief_hubs.csv,Hub_ID,String,Key,Relief hub identifier
+relief_hubs.csv,Hub_Name,String,Reference,Synthetic hub name
+relief_hubs.csv,District,Category,Reference,District containing hub
+relief_hubs.csv,Latitude,Float,Reference,Hub latitude
+relief_hubs.csv,Longitude,Float,Reference,Hub longitude
+relief_hubs.csv,Storage_Capacity,Integer,Constraint,Synthetic storage capacity
+relief_hubs.csv,Vehicle_Count,Integer,Constraint,Available vehicle count
+resource_inventory.csv,Inventory_ID,String,Key,Unique inventory record
+resource_inventory.csv,Hub_ID,String,Join,Relief hub
+resource_inventory.csv,Event_ID,String,Join,Disaster event
+resource_inventory.csv,Food_Available_packets,Integer,Constraint,Food stock at hub for event
+resource_inventory.csv,Water_Available_Liters,Integer,Constraint,Water stock at hub for event
+resource_inventory.csv,Medical_Kits_Available,Integer,Constraint,Medical kit stock at hub for event
+resource_inventory.csv,Shelter_Capacity_Available,Integer,Constraint,Available shelter capacity
+resource_inventory.csv,Vehicles_Available,Integer,Constraint,Vehicles available for event
+resource_inventory.csv,Vehicle_Capacity,Integer,Constraint,Synthetic payload capacity per vehicle
+resource_inventory.csv,Rescue_Personnel_Available,Integer,Constraint,Available rescue personnel
+resource_inventory.csv,Distribution_Personnel_Available,Integer,Constraint,Available distribution personnel
+resource_inventory.csv,Medical_Personnel_Available,Integer,Constraint,Available medical personnel
+historical_event_districts.csv,Historical_Record_ID,String,Key,Unique normalized historical row
+historical_event_districts.csv,Event_ID,String,Join,Links to disaster event
+historical_event_districts.csv,District,Category,Reference,Historically documented district
+historical_event_districts.csv,State,Category,Reference,State
+historical_event_districts.csv,Historically_Documented,Boolean,Reference,Whether district is part of supplied historical reference
+historical_event_districts.csv,Source_Type,String,Provenance,Indicates supplied historical reference provenance
