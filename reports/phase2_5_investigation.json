@@ -1,0 +1,72 @@
+{
+    "pop_baseline": {
+        "total_groups": 129,
+        "changing_groups": 0,
+        "constant_groups": 129,
+        "max_variation": 0.0,
+        "mean_std": 0.0
+    },
+    "dist_to_hub": {
+        "total_groups": 129,
+        "changing_groups": 0,
+        "constant_groups": 129,
+        "max_variation": 0.0,
+        "mean_std": 0.0
+    },
+    "inventory": {
+        "food_changing": 0,
+        "water_changing": 0
+    },
+    "travel_time": {
+        "corr_dist": 0.9943151264479191,
+        "corr_acc": -0.6063939809903179,
+        "ratio_mean": "Infinity",
+        "ratio_std": "NaN"
+    },
+    "target_metrics": [
+        {
+            "Target": "Food_Required_packets",
+            "Primary_Predictor": "Population_Affected_Est",
+            "Correlation": 0.99697908720607,
+            "R_Squared_Simple_Model": 0.993967300326249,
+            "MAE": 8394.194513495328,
+            "RMSE": 11083.717577642867,
+            "Deterministic_Risk": "HIGH",
+            "ML_Readiness": "REDESIGN TARGET GENERATION"
+        },
+        {
+            "Target": "Water_Required_Liters",
+            "Primary_Predictor": "Population_Affected_Est",
+            "Correlation": 0.9951162115397503,
+            "R_Squared_Simple_Model": 0.9902562744692255,
+            "MAE": 34002.36459047324,
+            "RMSE": 47762.29561512853,
+            "Deterministic_Risk": "HIGH",
+            "ML_Readiness": "REDESIGN TARGET GENERATION"
+        },
+        {
+            "Target": "Medical_Kits_Required",
+            "Primary_Predictor": "Injured_Est",
+            "Correlation": 0.7805487656879129,
+            "R_Squared_Simple_Model": 0.6506189354130425,
+            "MAE": 790.6317418747273,
+            "RMSE": 1077.5453710623285,
+            "Deterministic_Risk": "LOW",
+            "ML_Readiness": "READY WITH CARE"
+        },
+        {
+            "Target": "Shelter_Spaces_Required",
+            "Primary_Predictor": "Population_Affected_Est",
+            "Correlation": 0.991325996578341,
+            "R_Squared_Simple_Model": 0.9899395249043516,
+            "MAE": 4782.450030326165,
+            "RMSE": 6176.837982859801,
+            "Deterministic_Risk": "HIGH",
+            "ML_Readiness": "REDESIGN TARGET GENERATION"
+        }
+    ],
+    "sim_variation": {
+        "mean_food_std_across_sims": 15121.570675223527,
+        "max_food_std_across_sims": 53837.89798738432
+    }
+}

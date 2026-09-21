@@ -1,0 +1,5 @@
+Target,Primary_Predictor,Correlation,R_Squared_Simple_Model,MAE,RMSE,Deterministic_Risk,Simulation_Variation,Temporal_Variation,ML_Readiness,Recommendation
+Food_Required_packets,Population_Affected_Est,0.9969,0.9939,8394,11083,HIGH,Meaningfully Different,Static Base,NOT READY,REDESIGN TARGET GENERATION
+Water_Required_Liters,Population_Affected_Est,0.9951,0.9902,34002,47762,HIGH,Meaningfully Different,Static Base,NOT READY,REDESIGN TARGET GENERATION
+Shelter_Spaces_Required,Population_Affected_Est,0.9913,0.9899,4782,6176,HIGH,Meaningfully Different,Static Base,NOT READY,REDESIGN TARGET GENERATION
+Medical_Kits_Required,Injured_Est,0.7805,0.6506,790,1077,LOW,Meaningfully Different,Static Base,READY WITH CARE,PROCEED WITH CAUTION
