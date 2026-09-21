@@ -1,0 +1,58 @@
+[
+    {
+        "Target": "Food_Required_packets",
+        "Best_Model": "Random_Forest",
+        "MAE": 59250.79448777262,
+        "RMSE": 89943.88378350723,
+        "R2": 0.860135693795131,
+        "Top_Features": [
+            "Fatalities_Est",
+            "District",
+            "Rainfall_mm",
+            "Disaster_Type",
+            "Population_Affected_Est"
+        ]
+    },
+    {
+        "Target": "Water_Required_Liters",
+        "Best_Model": "Random_Forest",
+        "MAE": 168411.88265539435,
+        "RMSE": 298106.2844930624,
+        "R2": 0.7691747753774134,
+        "Top_Features": [
+            "Fatalities_Est",
+            "District",
+            "Population_Affected_Est",
+            "Infrastructure_Damage_Score",
+            "Estimated_Travel_Time_min"
+        ]
+    },
+    {
+        "Target": "Medical_Kits_Required",
+        "Best_Model": "Random_Forest",
+        "MAE": 794.1834632614197,
+        "RMSE": 1415.6535504314252,
+        "R2": 0.8349297940756208,
+        "Top_Features": [
+            "District",
+            "Population_Affected_Est",
+            "Accessibility_Score",
+            "Wind_Speed_kmph",
+            "Rainfall_mm"
+        ]
+    },
+    {
+        "Target": "Shelter_Spaces_Required",
+        "Best_Model": "Random_Forest",
+        "MAE": 1042.7445115371338,
+        "RMSE": 2328.5912156728796,
+        "R2": 0.8619215517429892,
+        "Top_Features": [
+            "Infrastructure_Damage_Score",
+            "Houses_Damaged_Est",
+            "Disaster_Type",
+            "Distance_to_Hub_km",
+            "Wind_Speed_kmph"
+        ]
+    }
+]

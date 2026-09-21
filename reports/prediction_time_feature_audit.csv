@@ -1,0 +1,34 @@
+Feature,Availability_Class,Justification
+Event_ID,AVAILABLE BEFORE PREDICTION,Event identifier
+District,AVAILABLE BEFORE PREDICTION,Static geographic data
+Response_Zone,AVAILABLE BEFORE PREDICTION,Static geographic data
+Assessment_Window,AVAILABLE BEFORE PREDICTION,Temporal index
+Hours_Since_Disaster,AVAILABLE BEFORE PREDICTION,Temporal index
+Disaster_Type,AVAILABLE BEFORE PREDICTION,Known immediately
+Distance_to_Hub_km,AVAILABLE BEFORE PREDICTION,Static geographic data
+Population_Baseline,AVAILABLE BEFORE PREDICTION,Static demographic data
+Temperature_C,AVAILABLE BEFORE PREDICTION,Weather observation
+Rainfall_mm,AVAILABLE BEFORE PREDICTION,Weather observation
+Wind_Speed_kmph,AVAILABLE BEFORE PREDICTION,Weather observation
+Flood_Depth_m,AVAILABLE BEFORE PREDICTION,Weather observation
+River_Level_m,AVAILABLE BEFORE PREDICTION,Weather observation
+Storm_Surge_m,AVAILABLE BEFORE PREDICTION,Weather observation
+Wave_Height_m,AVAILABLE BEFORE PREDICTION,Weather observation
+Burned_Area_km2,AVAILABLE BEFORE PREDICTION,Observation
+Rainfall_Deficit_pct,AVAILABLE BEFORE PREDICTION,Observation
+Slope_Risk_Score,AVAILABLE BEFORE PREDICTION,Static geographic data
+Population_Affected_Est,AVAILABLE DURING ASSESSMENT,Estimated during field assessment
+Affected_Population_pct,AVAILABLE DURING ASSESSMENT,Derived from baseline
+Fatalities_Est,AVAILABLE DURING ASSESSMENT,Estimated during field assessment
+Injured_Est,AVAILABLE DURING ASSESSMENT,Estimated during field assessment
+Houses_Damaged_Est,AVAILABLE DURING ASSESSMENT,Estimated during field assessment
+Severity_Score,AVAILABLE DURING ASSESSMENT,Scored during assessment
+Infrastructure_Damage_Score,AVAILABLE DURING ASSESSMENT,Scored during assessment
+Accessibility_Score,AVAILABLE DURING ASSESSMENT,Scored during assessment
+Medical_Urgency_Score,AVAILABLE DURING ASSESSMENT,Scored during assessment
+Rescue_Cases_Est,AVAILABLE DURING ASSESSMENT,Estimated during field assessment
+Estimated_Travel_Time_min,AVAILABLE DURING ASSESSMENT,Derived from distance and accessibility
+Estimated_Relief_Time_min,ONLY KNOWN AFTER DEMAND/ALLOCATION,Logistical downstream consequence of allocation
+Priority_Score,ONLY KNOWN AFTER DEMAND/ALLOCATION,Downstream output intended for Phase 4
+Priority_Level,ONLY KNOWN AFTER DEMAND/ALLOCATION,Downstream output intended for Phase 4
+Road_Access_Score,UNCERTAIN,Duplicate of Accessibility Score (excluded)

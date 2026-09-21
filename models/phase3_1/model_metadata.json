@@ -1,0 +1,203 @@
+{
+    "Food_Required_packets": {
+        "best_model": "Random_Forest",
+        "features": [
+            "Disaster_Type",
+            "District",
+            "Hours_Since_Disaster",
+            "Population_Baseline",
+            "Population_Affected_Est",
+            "Affected_Population_pct",
+            "Fatalities_Est",
+            "Houses_Damaged_Est",
+            "Severity_Score",
+            "Infrastructure_Damage_Score",
+            "Accessibility_Score",
+            "Medical_Urgency_Score",
+            "Temperature_C",
+            "Rainfall_mm",
+            "Wind_Speed_kmph",
+            "Distance_to_Hub_km",
+            "Estimated_Travel_Time_min",
+            "Rescue_Cases_Est"
+        ],
+        "metrics": [
+            {
+                "Model": "Linear_Regression",
+                "MAE": 60159.785705851085,
+                "RMSE": 88336.52182683758,
+                "R2": 0.865089978051609
+            },
+            {
+                "Model": "Ridge",
+                "MAE": 60068.859571356625,
+                "RMSE": 88161.18773930793,
+                "R2": 0.8656249968649429
+            },
+            {
+                "Model": "Random_Forest",
+                "MAE": 59250.79448777262,
+                "RMSE": 89943.88378350723,
+                "R2": 0.860135693795131
+            }
+        ],
+        "top_features": [
+            "Fatalities_Est",
+            "District",
+            "Rainfall_mm",
+            "Disaster_Type",
+            "Population_Affected_Est"
+        ]
+    },
+    "Water_Required_Liters": {
+        "best_model": "Random_Forest",
+        "features": [
+            "Disaster_Type",
+            "District",
+            "Hours_Since_Disaster",
+            "Population_Baseline",
+            "Population_Affected_Est",
+            "Affected_Population_pct",
+            "Fatalities_Est",
+            "Houses_Damaged_Est",
+            "Severity_Score",
+            "Infrastructure_Damage_Score",
+            "Accessibility_Score",
+            "Medical_Urgency_Score",
+            "Temperature_C",
+            "Rainfall_mm",
+            "Wind_Speed_kmph",
+            "Distance_to_Hub_km",
+            "Estimated_Travel_Time_min",
+            "Rescue_Cases_Est"
+        ],
+        "metrics": [
+            {
+                "Model": "Linear_Regression",
+                "MAE": 214589.72184807496,
+                "RMSE": 360322.0858444826,
+                "R2": 0.662772665864152
+            },
+            {
+                "Model": "Ridge",
+                "MAE": 214056.6620941119,
+                "RMSE": 359950.8945806699,
+                "R2": 0.6634671076947782
+            },
+            {
+                "Model": "Random_Forest",
+                "MAE": 168411.88265539435,
+                "RMSE": 298106.2844930624,
+                "R2": 0.7691747753774134
+            }
+        ],
+        "top_features": [
+            "Fatalities_Est",
+            "District",
+            "Population_Affected_Est",
+            "Infrastructure_Damage_Score",
+            "Estimated_Travel_Time_min"
+        ]
+    },
+    "Medical_Kits_Required": {
+        "best_model": "Random_Forest",
+        "features": [
+            "Disaster_Type",
+            "District",
+            "Hours_Since_Disaster",
+            "Population_Baseline",
+            "Population_Affected_Est",
+            "Affected_Population_pct",
+            "Fatalities_Est",
+            "Houses_Damaged_Est",
+            "Severity_Score",
+            "Infrastructure_Damage_Score",
+            "Accessibility_Score",
+            "Medical_Urgency_Score",
+            "Temperature_C",
+            "Rainfall_mm",
+            "Wind_Speed_kmph",
+            "Distance_to_Hub_km",
+            "Estimated_Travel_Time_min",
+            "Rescue_Cases_Est",
+            "Injured_Est"
+        ],
+        "metrics": [
+            {
+                "Model": "Linear_Regression",
+                "MAE": 1468.5317928523693,
+                "RMSE": 2065.066637117084,
+                "R2": 0.6487447138404661
+            },
+            {
+                "Model": "Ridge",
+                "MAE": 1456.0634934924542,
+                "RMSE": 2048.6873955056153,
+                "R2": 0.6542946353153716
+            },
+            {
+                "Model": "Random_Forest",
+                "MAE": 794.1834632614197,
+                "RMSE": 1415.6535504314252,
+                "R2": 0.8349297940756208
+            }
+        ],
+        "top_features": [
+            "District",
+            "Population_Affected_Est",
+            "Accessibility_Score",
+            "Wind_Speed_kmph",
+            "Rainfall_mm"
+        ]
+    },
+    "Shelter_Spaces_Required": {
+        "best_model": "Random_Forest",
+        "features": [
+            "Disaster_Type",
+            "District",
+            "Hours_Since_Disaster",
+            "Population_Baseline",
+            "Population_Affected_Est",
+            "Affected_Population_pct",
+            "Fatalities_Est",
+            "Houses_Damaged_Est",
+            "Severity_Score",
+            "Infrastructure_Damage_Score",
+            "Accessibility_Score",
+            "Medical_Urgency_Score",
+            "Temperature_C",
+            "Rainfall_mm",
+            "Wind_Speed_kmph",
+            "Distance_to_Hub_km",
+            "Estimated_Travel_Time_min",
+            "Rescue_Cases_Est"
+        ],
+        "metrics": [
+            {
+                "Model": "Linear_Regression",
+                "MAE": 3037.4736944525216,
+                "RMSE": 5749.832953760703,
+                "R2": 0.15812067667166896
+            },
+            {
+                "Model": "Ridge",
+                "MAE": 3038.5991044727466,
+                "RMSE": 5737.372274472139,
+                "R2": 0.1617656594996718
+            },
+            {
+                "Model": "Random_Forest",
+                "MAE": 1042.7445115371338,
+                "RMSE": 2328.5912156728796,
+                "R2": 0.8619215517429892
+            }
+        ],
+        "top_features": [
+            "Infrastructure_Damage_Score",
+            "Houses_Damaged_Est",
+            "Disaster_Type",
+            "Distance_to_Hub_km",
+            "Wind_Speed_kmph"
+        ]
+    }
+}
