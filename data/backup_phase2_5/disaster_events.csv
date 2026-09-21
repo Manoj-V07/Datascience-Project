@@ -1,0 +1,21 @@
+Event_ID,Event_Name,Event_Date,Disaster_Type,State,Expected_Duration_Hours,Historical_Event
+EVT001,Cyclone Thane,2011-12-30,Cyclone,Tamil Nadu,96,True
+EVT002,Cyclone Nilam,2012-10-31,Cyclone,Tamil Nadu,96,True
+EVT003,Cyclone Vardah,2016-12-12,Cyclone,Tamil Nadu,96,True
+EVT004,Cyclone Ockhi,2017-12-02,Cyclone,Tamil Nadu,96,True
+EVT005,Cyclone Gaja,2018-11-16,Cyclone,Tamil Nadu,96,True
+EVT006,Cyclone Nivar,2020-11-25,Cyclone,Tamil Nadu,96,True
+EVT007,Cyclone Burevi,2020-12-03,Cyclone,Tamil Nadu,96,True
+EVT008,Cyclone Mandous,2022-12-09,Cyclone,Tamil Nadu,96,True
+EVT009,Cyclone Michaung,2023-12-04,Cyclone,Tamil Nadu,96,True
+EVT010,Cyclone Fengal,2024-11-30,Cyclone,Tamil Nadu,96,True
+EVT011,Indian Ocean Tsunami 2004,2004-12-26,Tsunami,Tamil Nadu,72,True
+EVT012,Chennai Floods 2015,2015-12-02,Flood,Tamil Nadu,96,True
+EVT013,South Tamil Nadu Floods 2023,2023-12-18,Flood,Tamil Nadu,96,True
+EVT014,North-East Monsoon Drought 2016-17,2017-01-10,Drought,Tamil Nadu,2160,True
+EVT015,Tamil Nadu Forest Fire Season 2022,2022-04-15,Wildfire,Tamil Nadu,240,True
+EVT016,Tamil Nadu Forest Fire Season 2023,2023-04-15,Wildfire,Tamil Nadu,240,True
+EVT017,Tamil Nadu Forest Fire Season 2024,2024-04-15,Wildfire,Tamil Nadu,240,True
+EVT018,Nilgiris Landslide Episode 2021,2021-11-10,Landslide,Tamil Nadu,72,True
+EVT019,Tamil Nadu Heatwave Season 2019,2019-05-25,Heatwave,Tamil Nadu,168,True
+EVT020,Tamil Nadu Heatwave Season 2024,2024-05-25,Heatwave,Tamil Nadu,168,True
