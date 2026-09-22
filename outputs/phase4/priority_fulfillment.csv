@@ -1,0 +1,4 @@
+Priority_Level,Predicted_Food_Demand,Predicted_Water_Demand,Predicted_Medical_Demand,Predicted_Shelter_Demand,Food_Allocated,Water_Allocated,Medical_Allocated,Shelter_Allocated,Food_Fulfillment_%,Water_Fulfillment_%,Medical_Fulfillment_%,Shelter_Fulfillment_%
+High,16840695,26427332,242447,1455338,85511.0,280441.0,1067.0,37240.0,0.5077640798078702,1.061177874482373,0.440096185970542,2.558855743476773
+Low,14942599,21130354,125772,713934,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Moderate,32646065,48204601,437483,2011692,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0

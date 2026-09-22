@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@import "tailwindcss";
+
+@import "tailwindcss";
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+@layer utilities {
+  .light-card {
+    @apply bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300;
+  }
+  
+  .light-panel {
+    @apply bg-white border-r border-slate-200;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600;
+  }
+  
+  .table-row-light {
+    @apply border-b border-slate-100 hover:bg-slate-50 transition-colors duration-200;
+  }
+
+  .badge-critical {
+    @apply bg-red-100 text-red-700 border border-red-200 px-2 py-1 rounded-md text-xs font-bold tracking-wider;
+  }
+  
+  .badge-high {
+    @apply bg-orange-100 text-orange-700 border border-orange-200 px-2 py-1 rounded-md text-xs font-bold tracking-wider;
+  }
+  
+  .badge-moderate {
+    @apply bg-yellow-100 text-yellow-700 border border-yellow-200 px-2 py-1 rounded-md text-xs font-bold tracking-wider;
+  }
+  
+  .badge-low {
+    @apply bg-emerald-100 text-emerald-700 border border-emerald-200 px-2 py-1 rounded-md text-xs font-bold tracking-wider;
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.4s ease-out forwards;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Custom Scrollbar for light theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
